@@ -65,7 +65,7 @@ public class TipCalculatorController {
             totalTextField.setText(currency.format(total));
         }
         catch (NumberFormatException ex) {
-            amountTextField.setText("Enter amount");
+            amountTextField.setText("0");
             amountTextField.selectAll();
             amountTextField.requestFocus();
         }
